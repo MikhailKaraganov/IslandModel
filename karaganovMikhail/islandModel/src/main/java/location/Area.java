@@ -63,22 +63,6 @@ public class Area {
 
     }
 
-//    public void perform (){
-//        ArrayList<Animal> animalsToRemove = new ArrayList<>();
-//        whoOnTheArea.forEach(animal -> {
-//            if (!animal.isDead()) {
-//                animal.reproduce();
-//                animal.eat();
-//                animal.move();
-//            }
-//            if (animal.isDead()) {
-//                animalsToRemove.add(animal);
-//            }
-//        });
-//        getGrassOnArea().forEach(Grass::reproduce);
-//        animalsToRemove.forEach(whoOnTheArea::remove);
-//    }
-
     @Override
     public String toString() {
         Map<String, Integer> countOfAnimals = new HashMap<>();

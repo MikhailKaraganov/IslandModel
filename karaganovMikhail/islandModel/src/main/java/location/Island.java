@@ -11,8 +11,6 @@ public class Island {
     public static final List<Class> animalClassesList = Arrays.asList(Bear.class, Boar.class, Boa.class, Buffalo.class, Caterpillar.class, Deer.class,
             Duck.class, Eagle.class, Fox.class, Goat.class, Horse.class, Mouse.class, Rabbit.class, Sheep.class, Wolf.class);
 
-
-//    public final List<Animal> allAnimalsOfIsland = new ArrayList<>();
     public static final int islandLength = SettingsReader.getMapRows();
     public static final int islandWidth = SettingsReader.getMapCols();
 

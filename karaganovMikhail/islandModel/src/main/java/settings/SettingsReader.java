@@ -2,6 +2,7 @@ package settings;
 
 import biologicalSubjects.Animal;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.util.ISO8601Utils;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 
 import java.io.File;
@@ -9,8 +10,8 @@ import java.io.IOException;
 import java.util.HashMap;
 
 public class SettingsReader {
-//    C:\Users\79165\IdeaProjects\\src\main\java\settings\AnimalCommonProperties.yaml
-    final static String COMMON_ANIMAL_PATH = "karaganovMikhail/IslandModel/src/main/java/settings/AnimalCommonProperties.yaml";
+
+    final static String COMMON_ANIMAL_PATH = System.getProperty("user.dir")+"\\karaganovMikhail\\islandModel\\src\\main\\SettingsYAMLFile\\AnimalCommonProperties.yaml";
     private ObjectMapper objMapper = new ObjectMapper(new YAMLFactory());
     private AnimalsProperties animalsProperties;
     static AnimalsProperties ANIMALS_PROPERTIES;

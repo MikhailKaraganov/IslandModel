@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
-//@JsonIgnoreProperties(ignoreUnknown = true)
+
 public final class AnimalsProperties implements Serializable {
     private HashMap<String, AnimalPropTemplate> animalProperties = new HashMap<>();
 

@@ -2,7 +2,7 @@ package location;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-//    --------------------------------
+
 public class Coordinate {
     private int x;
     private int y;
@@ -14,11 +14,14 @@ public class Coordinate {
 
     @Override
     public int hashCode() {
-        return 32 * this.getX() + 16 * this.getY();
+        return 11 * this.getX() + 13 * this.getY();
     }
 
     @Override
     public boolean equals(Object obj) {
+        if (obj == null){
+            return false;
+        }
         if (this.hashCode() == obj.hashCode() && obj.getClass().equals(this.getClass())) {
             return this.getX() == ((Coordinate) obj).getX() &&
                     this.getY() == ((Coordinate) obj).getY();
